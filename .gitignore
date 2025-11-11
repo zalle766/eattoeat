@@ -128,7 +128,8 @@ backend/vendor/
 *.sqlite
 *.db
 
-# Frontend build outputs (exclude only these)
+# Frontend - Allow frontend directory but exclude build outputs
+!frontend/
 frontend/dist/
 frontend/build/
 frontend/node_modules/
