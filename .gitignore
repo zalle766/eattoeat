@@ -35,6 +35,24 @@ coverage/
 # nyc test coverage
 .nyc_output
 
+# Frontend - Allow frontend directory but exclude build outputs (MUST BE BEFORE GENERAL RULES)
+!frontend/
+!frontend/src/
+!frontend/public/
+!frontend/package.json
+!frontend/package-lock.json
+!frontend/vite.config.js
+!frontend/tailwind.config.js
+!frontend/postcss.config.js
+!frontend/index.html
+!frontend/.gitignore
+!frontend/README.md
+!frontend/Dockerfile
+!frontend/nginx.conf
+frontend/dist/
+frontend/build/
+frontend/node_modules/
+
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -81,7 +99,6 @@ dist
 # Gatsby files
 .cache/
 public
-!frontend/public/
 
 # Storybook build outputs
 .out
@@ -128,11 +145,6 @@ backend/vendor/
 *.sqlite
 *.db
 
-# Frontend - Allow frontend directory but exclude build outputs
-!frontend/
-frontend/dist/
-frontend/build/
-frontend/node_modules/
 
 # Docker
 .dockerignore
