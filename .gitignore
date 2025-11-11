@@ -81,6 +81,7 @@ dist
 # Gatsby files
 .cache/
 public
+!frontend/public/
 
 # Storybook build outputs
 .out
@@ -127,9 +128,10 @@ backend/vendor/
 *.sqlite
 *.db
 
-# Build outputs
+# Frontend build outputs (exclude only these)
 frontend/dist/
 frontend/build/
+frontend/node_modules/
 
 # Docker
 .dockerignore
